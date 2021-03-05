@@ -24,7 +24,7 @@ class GenerateRandomDataFile {
         }
     }
 
-    private static String getRandomStringChars(int minLength, int maxLength) {
+    private String getRandomStringChars(int minLength, int maxLength) {
         Random random = new Random();
         int leftLimit = 48; // numeral '0'
         int rightLimit = 122; // letter 'z'
@@ -37,7 +37,7 @@ class GenerateRandomDataFile {
                 .toString();
     }
 
-    private static int getRandomStringLength(int minLength, int maxLength) {
+    private int getRandomStringLength(int minLength, int maxLength) {
         Random random = new Random();
         return random.nextInt(maxLength + minLength) + minLength;
     }

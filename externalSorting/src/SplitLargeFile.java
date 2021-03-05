@@ -32,7 +32,7 @@ public class SplitLargeFile extends Thread {
         }
     }
 
-    private static void writeToFile(BufferedWriter writer, String line) {
+    private void writeToFile(BufferedWriter writer, String line) {
         try {
             writer.write(line + "\r\n");
         } catch (Exception e) {
